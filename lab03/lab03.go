@@ -15,8 +15,8 @@ func Calculator(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Error!")
 		return
 	}
-	a, err_a := strconv.ParseInt(path[2], 10, 64)
-	b, err_b := strconv.ParseInt(path[3], 10, 64)
+	a, err_a := strconv.ParseInt(path[2], 10, 64)//num1
+	b, err_b := strconv.ParseInt(path[3], 10, 64)//num2
 	operation := path[1]
 	if err_a != nil || err_b != nil {
 		fmt.Fprintf(w, "Error!")
