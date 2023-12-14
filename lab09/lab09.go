@@ -39,5 +39,5 @@ func main() {
 	})
 
 	c.Visit("https://www.ptt.cc/bbs/joke/M.1481217639.A.4DF.html")
-
+	c.Wait()
 }
