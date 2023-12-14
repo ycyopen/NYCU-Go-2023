@@ -25,5 +25,4 @@ jobs:
       working-directory: 'lab09'
       run: |
         go mod tidy
-        sleep 10
         python validate.py
